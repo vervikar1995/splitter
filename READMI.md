@@ -40,7 +40,6 @@ cd splitter
 ```
 3. Usage
 
-Place your input CSV file named Test_task_1.csv in the root directory of the project.
 Open your command line interface.
 Navigate to the project directory.
 Run the program using the following command:
