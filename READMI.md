@@ -5,9 +5,10 @@ A simple Go program that reads a CSV file and splits it into multiple CSV files 
 ## Features
 
 - **Reads CSV Files**: Supports CSV files formatted with semicolons (`;`).
+- **Error Handling**: Robust error handling for file operations and data processing.
 - **Unique ID Handling**: Splits records into separate files for each unique ID.
 - **Custom Data Formatting**:
-<ul> <li>Replaces commas with dots in numeric values.</li>
+<ol> <li>Replaces commas with dots in numeric values.</li>
     <li>Converts date formats to `dd-MMM-yy`.</li>
     <li>Values in the "No" column are handled as follows:
         <ul>
@@ -17,9 +18,8 @@ A simple Go program that reads a CSV file and splits it into multiple CSV files 
             </li>
         </ul>
     </li>.
-</ul>
-- **Error Handling**:
-Robust error handling for file operations and data processing.
+</ol>
+
 
 ## Requirements
 
@@ -32,7 +32,6 @@ Robust error handling for file operations and data processing.
 ```
 git clone https://github.com/vervikar1995/splitter.git
 cd splitter
-
 ```
 
 2. Install dependencies:
@@ -62,4 +61,10 @@ The output CSV files will be created in the output_files directory, with each fi
             output_1.csv
             output_2.csv
     ```
-    Each output file will contain formatted data according to the specified rules.
+    Each output file will contain formatted data according to the specified rules:
+
+    ```
+            person_name,id,Total,Paid,Date,No
+            Irina,11651,1195.17,1195.17,15-Nov-18,2018-10-15
+            Irina,11651,1195.17,1195.17,15-Nov-18,20181015
+    ```
