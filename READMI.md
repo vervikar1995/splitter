@@ -17,7 +17,7 @@ A simple Go program that reads a CSV file and splits it into multiple CSV files 
             <li>The program does not alter date formats in the "No" column if they appear as `yyyy.mm.dd` (e.g., `2018.06.14` remains unchanged)
             </li>
         </ul>
-    </li>.
+    </li>
 </ol>
 
 
