@@ -21,5 +21,5 @@ func main() {
 		log.Fatalf("Error splitting CSV file: %v", err) // Log fatal error if splitting fails
 	}
 
-	fmt.Println("Files are created. You can find them in  "output_files" directory!")
+	fmt.Println("Files are created. You can find them in the 'output_files' directory!")
 }
