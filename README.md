@@ -14,7 +14,7 @@ A simple Go program that reads a CSV file and splits it into multiple CSV files 
         <ul>
             <li>Values in the format `20180615` remain unchanged. </li>
             <li>Values in the format `dd/mm/yyyy` are reformatted to `yyyy-mm-dd` (e.g., `15/06/2018` becomes `2018-06-15`).</li>
-            <li>The program does not alter date formats in the "No" column if they appear as `yyyy.mm.dd` (e.g., `2018.06.14` remains unchanged) because it wasn't mentioned in technical task.
+            <li>The program does not alter date formats in the "No" column if they appear as `yyyy.mm.dd` (e.g., `2018.06.14` remains unchanged) (because it wasn't mentioned in technical task :)).
             </li>
         </ul>
     </li>
