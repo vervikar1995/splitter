@@ -1,4 +1,4 @@
-package utils
+package pkg
 
 import (
 	"encoding/csv"
@@ -52,6 +52,7 @@ func writeCSVFile(filePath string, records [][]string) error {
 	if err != nil {
 		return fmt.Errorf("error creating file: %v", err)
 	}
+
 	defer file.Close() // Ensure the file is closed after writing
 
 	writer := csv.NewWriter(file) // Create a new CSV writer
